@@ -2,6 +2,40 @@
 
 This project contains automated tests for the **Demoblaze** e-commerce website using **Selenium WebDriver**, **Cucumber (BDD)** framework, and **Page Object Model (POM)** design pattern. The tests cover key features like **User Login**, **Homepage functionality**, and **Add to Cart functionality**.
 
+### **Folder Structure**
+~~~
+kartiksharma200-demoblaze-automation-tests/
+├── README.md
+├── LICENSE
+├── demoblaze.com_Project.zip
+└── demoblaze.com_Project/
+    ├── pom.xml
+    ├── testng.xml
+    ├── src/
+    │   └── test/
+    │       ├── java/
+    │       │   ├── Test_Runner/
+    │       │   │   └── CucumberTestRunner.java
+    │       │   └── com/
+    │       │       ├── pageObject/
+    │       │       │   ├── AddToCart.java
+    │       │       │   ├── HomePage.java
+    │       │       │   ├── NavbarPage.java
+    │       │       │   └── LoginPage.java
+    │       │       └── stepDefinition/
+    │       │           ├── AddToCartStep.java
+    │       │           ├── HomepageStep.java
+    │       │           ├── LoginStep.java
+    │       │           └── NavbarStep.java
+    │       └── resources/
+    │           └── Features/
+    │               ├── AddToCart.feature
+    │               ├── HomePage.feature
+    │               ├── Login.feature
+    │               └── Navbar.feature
+    ├── target/
+    └── test-output/
+~~~
 ### **Features Tested:**
 - **Login Feature**: Automates the login process for users.
 - **Homepage Feature**: Validates the correct loading and elements on the homepage.
